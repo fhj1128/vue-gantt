@@ -3,7 +3,7 @@ import useDayjsHelper from "./useDayjsHelper"
 import provideConfig from "@/provider/provideConfig"
 
 export default function useTimeAxisUnits() {
-  const { precision } = provideConfig()
+  const { precision, width } = provideConfig()
   const { chartStartDayjs, chartEndDayjs } = useDayjsHelper()
 
   const upperPrecision = computed(() => {
@@ -37,10 +37,10 @@ export default function useTimeAxisUnits() {
 
   const displayFormats = {
     hour: "HH",
-    date: "DD.MMM",
-    day: "DD.MMM",
+    date: "DD",
+    day: "DD",
     week: "WW",
-    month: "MMMM YYYY",
+    month: "MM",
     year: "YYYY"
   }
 

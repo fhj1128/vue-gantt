@@ -268,7 +268,7 @@ provide(EMIT_BAR_EVENT_KEY, emitBarEvent)
   position: relative;
   display: flex;
   flex-direction: column;
-  overflow-x: hidden;
+  overflow-x: auto;
   -webkit-touch-callout: none;
   user-select: none;
   font-variant-numeric: tabular-nums;

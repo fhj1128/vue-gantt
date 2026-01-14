@@ -12,7 +12,6 @@ import customParseFormat from 'dayjs/plugin/customParseFormat.js'
 
 import App from './App.vue'
 import router from './router'
-import VueKonva from 'vue-konva'
 import 'jordium-gantt-vue3/dist/assets/jordium-gantt-vue3.css'
 const app = createApp(App)
 
@@ -26,6 +25,5 @@ dayjs.extend(advancedFormat)
 
 app.use(createPinia())
 app.use(router)
-app.use(VueKonva)
 
 app.mount('#app')
